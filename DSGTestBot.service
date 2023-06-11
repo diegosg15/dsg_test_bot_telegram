@@ -1,0 +1,16 @@
+[Unit]
+Description = DSGTestBot instance to serve One
+After=network.target
+
+[Service]
+User=ubuntudsg
+Group=www-data
+WorkingDirectory=/var/www/WeCars-Python/app
+Environment="PATH=/var/www/DSGTestBot/dsgtestbotenv/bin:/usr/bin"
+
+
+ExecStart=/var/www/DSGTestBot/dsgtestbotenv/bin/gunicorn --workers 3 --bind  0.0.0.0:5000 -m 007  entrypoint:app 
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+# Este archivo de requisitos requiere Python 3.8
+#Este archivo de requisitos instala las siguientes bibliotecas:
+# - Flask versión  para construir aplicaciones web
+# - Flask-Cors versión  para habilitar CORS en Flask
+# - Gunicorn versión para ejecutar aplicaciones Flask en producción
+
+Flask==2.2.5
+pymongo==4.3.3
+python-telegram-bot==20.3
+Flask-Cors
+gunicorn
+
+
+
