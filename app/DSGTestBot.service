@@ -1,0 +1,16 @@
+[Unit]
+Description = DSGTestBot instance to serve One
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/var/www/dsg_test_bot_telegram/app
+Environment="PATH=/var/www/dsg_test_bot_telegram/dsgtestbotenv/bin:/usr/bin"
+
+
+ExecStart=/var/www/dsg_test_bot_telegram/dsgtestbotenv/bin/gunicorn --workers 3 --bind  0.0.0.0:5000 -m 007  entrypoint:appFlask 
+
+
+[Install]
+WantedBy=multi-user.target

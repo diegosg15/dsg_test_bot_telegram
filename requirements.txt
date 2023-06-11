@@ -8,6 +8,7 @@ Flask==2.2.5
 pymongo==4.3.3
 python-telegram-bot==20.3
 Flask-Cors
+pytest
 gunicorn
 
 

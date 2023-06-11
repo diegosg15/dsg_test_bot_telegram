@@ -1,4 +1,4 @@
-from app import app
+from app import appFlask
 
 if __name__ == "__main__":
-    app.run()
+    appFlask.run()

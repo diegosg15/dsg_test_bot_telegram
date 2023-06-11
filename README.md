@@ -64,22 +64,27 @@ sudo apt install python3-virtualenv python3-venv
 sudo mkdir /var/www/
 ```
 
-6. Mover o clonar la carpeta del proyecto DSGTestBot a  /var/www/
+6. clonar el proyecto en /var/www/
+```bash
+cd /var/www/
+sudo git clone https://github.com/diegosg15/dsg_test_bot_telegram.git
+```
 
 
 7. Dar permisos al proyecto para el usuario del servidor:
+Reemplazar "userName" con el nombre de usuario del servidor
 ```bash
-sudo chown -R userName:userName /var/www/DSGTestBot # Reemplazar "userName" con el nombre de usuario del servidor
+sudo chown -R ubuntu:ubuntu /var/www/dsg_test_bot_telegram 
 ```
 
 8. Establecer permisos adecuados para el proyecto:
 ```bash
-sudo chmod 755 /var/www/DSGTestBot
+sudo chmod 755 /var/www/dsg_test_bot_telegram
 ```
 
 9. Navegar al directorio del proyecto:
 ```bash
-cd /var/www/DSGTestBot
+cd /var/www/dsg_test_bot_telegram
 ```
 
 10. Crear un entorno virtual de Python:
@@ -104,7 +109,7 @@ cd app/
 
 14. Probar el servicio con el siguiente comando de gunicorn:
 ```bash
-gunicorn --bind 0.0.0.0:5000 entrypoint:app
+gunicorn --bind 0.0.0.0:5000 entrypoint:appFlask
 #Detener la prueba presionando Ctrl + C.
 ```
 
@@ -220,7 +225,7 @@ GET /v0/messages
       {
         "message": "Hola a todos"
       }
-```
+      ```
 - Respuesta exitosa:
     - Código de estado: 200
     - Cuerpo de respuesta: 
@@ -229,7 +234,7 @@ GET /v0/messages
             "status": "message sent to user"
         }
         ```
-         ```json
+        ```json
         {
             "status": "message sent to all users"
         }
