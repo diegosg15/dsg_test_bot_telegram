@@ -40,6 +40,8 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
+Ejecutando en windows
+![Image text](https://github.com/diegosg15/dsg_test_bot_telegram/blob/main/assets/windows.PNG)
 
 ## Ejecución APIREST en Ubuntu (Produccion)
 1. Actualizar el sistema operativo Ubuntu:
@@ -242,8 +244,9 @@ GET /v0/messages
             "status": "message sent to all users"
         }
         ```
-
-
+Usando Postman
+![Image text](https://github.com/diegosg15/dsg_test_bot_telegram/blob/main/assets/testpostmanGET.PNG)
+![Image text](https://github.com/diegosg15/dsg_test_bot_telegram/blob/main/assets/testpostmanPOST.PNG)
 
 
 
