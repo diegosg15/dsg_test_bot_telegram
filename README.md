@@ -20,7 +20,8 @@ Este proyecto es una solución que combina un bot de Telegram(DSGTestBot) y APIR
 2. Realiza una búsqueda en Telegram del bot llamado "DSGTestBot".
 3. Ejecuta la interfaz de programación de aplicaciones (API REST) correspondiente.
 4. Inicia el bot o envía un mensaje para que el usuario se registre automáticamente en la base de datos y pueda recibir mensajes.
-
+(https://github.com/diegosg15/dsg_test_bot_telegram/blob/main/assets/bot.jpeg)
+(https://github.com/diegosg15/dsg_test_bot_telegram/blob/main/assets/chatBot.jpeg)
 
 ## Ejecución APIREST en Windows
 
